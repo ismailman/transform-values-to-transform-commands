@@ -1,0 +1,60 @@
+<html>
+    <head><title>Transform Values to Transform Commands</title></head>
+    <body>
+        <textarea id="input" placeholder="Enter transform values JSON">
+            {
+                "translateX": 10,
+                "translateY": 20,
+                "translateZ": 30,
+                "rotateX": 10,
+                "rotateY": 20,
+                "rotateZ": 30,
+                "skewXY": "10deg",
+                "scaleX": 2,
+                "scaleY": 2,
+                "scaleZ": null
+            }
+        </textarea>
+        <input type="button" id="apply" value="Apply" />
+        <div id="output"></div>
+        <div id="outputBox"></div>
+
+        <script type="module">
+            import transformValuesToTransformCommands from './transformValuesToTransformCommands.mjs';
+
+            const input = document.getElementById('input');
+            const output = document.getElementById('output');
+            const outputBox = document.getElementById('outputBox');
+
+            document.getElementById('apply').addEventListener('click', () => {
+                const transformValues = JSON.parse(input.value);
+
+                const commands = transformValuesToTransformCommands(transformValues);
+                output.innerText = commands;
+                outputBox.style.transform = commands;
+            });
+
+        </script>
+
+        <style>
+            body {
+                perspective: 200px;
+            }
+
+            #input {
+                height: 200px;
+                width: 200px;
+            }
+
+            #output {
+                margin-bottom: 100px;
+            }
+
+            #outputBox {
+                height: 50px;
+                width: 50px;
+                background-color: red;
+            }
+        </style>
+    </body>
+</html>
