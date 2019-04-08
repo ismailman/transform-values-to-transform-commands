@@ -3,20 +3,21 @@
     <body>
         <textarea id="input" placeholder="Enter transform values JSON">
             {
-                "translateX": 10,
-                "translateY": 20,
+                "translateX": 300,
+                "translateY": 200,
                 "translateZ": 30,
                 "rotateX": 10,
                 "rotateY": 20,
                 "rotateZ": 30,
                 "skewXY": "10deg",
-                "scaleX": 2,
-                "scaleY": 2,
-                "scaleZ": null
+                "scale": 2
             }
         </textarea>
         <input type="button" id="apply" value="Apply" />
-        <div id="output"></div>
+        <div>
+            <b>Commands:</b>
+            <span id="output"></span>
+        </div>
         <div id="outputBox"></div>
 
         <script type="module">

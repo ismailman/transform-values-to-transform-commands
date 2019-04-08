@@ -16,9 +16,7 @@ console.log(
         rotateY: 20,
         rotateZ: 30,
         skewXY: '10deg',
-        scaleX: 2,
-        scaleY: 2,
-        scaleZ: null
+        scale: 2
     })
 );
 ```

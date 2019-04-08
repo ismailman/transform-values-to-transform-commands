@@ -1,18 +1,22 @@
 const ORDERED_TRANSFORM_PROPERTIES = [
-    'translateX', 'translateY', 'translateZ',
-    'rotateX', 'rotateY', 'rotateZ',
-    'skewXY',
-    'scaleX', 'scaleY', 'scaleZ'
+    'translate', 'translateX', 'translateY', 'translateZ',
+    'rotate', 'rotateX', 'rotateY', 'rotateZ',
+    'skew', 'skewXY',
+    'scale', 'scaleX', 'scaleY', 'scaleZ'
 ];
 
 const UNITS = {
+    'translate': 'px',
     'translateX': 'px',
     'translateY': 'px',
     'translateZ': 'px',
+    'rotate': 'deg',
     'rotateX': 'deg',
     'rotateY': 'deg',
     'rotateZ': 'deg',
+    'skew': 'deg',
     'skewXY': 'deg',
+    'scale': '',
     'scaleX': '',
     'scaleY': '',
     'scaleZ': ''
