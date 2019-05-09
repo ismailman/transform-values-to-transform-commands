@@ -1,21 +1,24 @@
 {
-    "name": "transform-values-to-transform-commands",
-    "version": "1.0.1",
-    "description": "Takes in an object of transform values and outputs a string of transform commands in a stable order.",
-    "main": "transformValuesToTransformCommands.mjs",
-    "repository": "https://github.com/ismailman/transform-values-to-transform-commands.git",
-    "author": "<code@omar.dev>",
-    "license": "MIT",
-    "keywords": [
-      "matrix",
-      "DOMMatrix",
-      "unmatrix",
-      "decompose matrix",
-      "matrix transformations",
-      "transforms",
-      "transform commands"
-    ],
-    "types": "index.d.ts",
-    "private": false
+  "name": "transform-values-to-transform-commands",
+  "version": "1.1.0",
+  "description": "Takes in an object of transform values and outputs a string of transform commands in a stable order.",
+  "main": "./dist/transformValuesToTransformCommands.js",
+  "repository": "https://github.com/ismailman/transform-values-to-transform-commands.git",
+  "author": "<code@omar.dev>",
+  "license": "MIT",
+  "keywords": [
+    "matrix",
+    "DOMMatrix",
+    "unmatrix",
+    "decompose matrix",
+    "matrix transformations",
+    "transforms",
+    "transform commands"
+  ],
+  "types": "index.d.ts",
+  "private": false,
+  "devDependencies": {
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.2"
   }
-  
+}
